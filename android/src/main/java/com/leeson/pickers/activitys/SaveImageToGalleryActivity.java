@@ -54,7 +54,7 @@ public class SaveImageToGalleryActivity extends BaseActivity {
                 Glide.with(this).asBitmap().load(imageUrl).listener(new RequestListener<Bitmap>() {
                     @Override
                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {
-                        Toast.makeText(SaveImageToGalleryActivity.this,"保存失败",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SaveImageToGalleryActivity.this,"Save failed",Toast.LENGTH_SHORT).show();
                         setResult(RESULT_CANCELED);
                         finish();
                         return false;
